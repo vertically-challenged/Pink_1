@@ -1,0 +1,22 @@
+.radio-indicator {
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin: 0 9px;
+    border-radius: 100%;
+
+    background-color: $bg-radio-indicator;
+
+    cursor: pointer;
+
+    &--active {
+        margin: 0 5px;
+        border: 3px solid $bg-mobile-nav--opened;
+        background-color: #ffffff;
+    }
+}
+
+.radio-indicator-wrapper {
+    display: flex;
+    align-items: center;
+}

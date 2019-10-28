@@ -1,0 +1,54 @@
+.hero-image {
+    margin-top: -68px;
+
+    background-image: url(../images/bg-back-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: 520px) {
+        background-size: cover;
+    }
+}
+
+.hero-image__hand {
+    height: 460px;
+    width: 100%;
+
+    background-image: url(../images/iphone-hand-mobile.png); 
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.hero-image__wrapper {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    background-color: $bg-mobile-hero-image;
+}
+
+.hero-image__wrapper .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.hero-image__button {
+    margin: 0 -20px;
+    margin-bottom: 16px;
+}
+
+.hero-image_application-stores {
+    margin-top: 16px !important;
+    margin-bottom: 8px !important;
+}
+
+.hero-image_description {
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: $light;
+    font-family: $main-font;
+    text-align: center;
+
+    color: white;
+}

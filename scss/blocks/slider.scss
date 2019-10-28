@@ -1,0 +1,30 @@
+.slider {
+    padding-top: 28px;
+}
+
+.slider .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider__radio-indicator-wrapper {
+    order: 2;
+
+    margin-top: 22px;
+}
+
+.slider__list {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.slider__item {
+    display: none;
+}
+
+.slider__item--active {
+    display: block;
+}

@@ -1,0 +1,12 @@
+.map {
+    display: flex;
+    justify-content: center;
+
+    margin-top: -500px;
+    
+    cursor: pointer;
+
+    & img {
+        display: block;
+    }
+}

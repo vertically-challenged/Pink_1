@@ -1,0 +1,26 @@
+.reviews {
+    &::after {
+        @include beveled-bg;
+    }
+}
+
+.reviews__list {
+    text-align: center;
+}
+.reviews__reviewer-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: $bold;
+    font-family: $main-font;
+}
+
+.reviews__review{
+    &::before {
+        content: "«";
+    }
+
+    &::after {
+        content: "»";
+    }
+}

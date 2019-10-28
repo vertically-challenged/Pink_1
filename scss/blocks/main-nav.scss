@@ -1,0 +1,117 @@
+.main-nav {
+    box-sizing: border-box;
+    min-height: 66px;
+    padding: 22px 0;
+    padding-bottom: 0;
+
+    background-color: $bg-nav;
+
+    &--opened {
+        background-color: $bg-mobile-nav--opened;
+    }
+    
+    &--closed .main-nav__wrapper {
+        display: none;
+    }
+
+    &--opened .main-nav__wrapper {
+        display: flex;
+    }
+}
+
+.main-nav .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav__wrapper {
+    margin: 0 -20px;
+}
+
+.main-nav__toggle {
+    position: relative;
+
+    width: 50px;
+    height: 24px;
+    margin-left: auto;
+    margin-bottom: 22px;
+    border: none;
+
+    background-color: #ffffff00;
+
+    // transition: .2s;
+    cursor: pointer;
+    
+    &::before, &::after, span {
+        content: "";
+
+        position: absolute;
+
+        height: 4px;
+        width: 100%;
+
+        background-color: #ffffff;
+    }
+
+    &::before {
+        top: 0; 
+        left: 0;
+    }
+
+    &::after {
+        bottom: 0;
+        left: 0;
+    }
+
+    span {
+        top: 50%; 
+        left: 0;
+
+        margin-top: -2px;
+    }
+
+    &:hover::before, 
+    &:hover::after, 
+    &:hover span,  
+    &:focus::before, 
+    &:focus::after, 
+    &:focus span {
+        background-color: $hover;
+    }
+
+    &:active::before, 
+    &:active::after, 
+    &:active span {
+        background-color: transparentize($color: $hover, $amount: .7);
+    }
+}
+
+.main-nav--opened .main-nav__toggle {
+    width: 24px;
+    height: 24px;
+    
+    // transition: .2s;
+
+    &::before, &::after {
+        margin-top: 50%;
+    }
+    &::before {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: rotate(-45deg);
+    }
+
+    span {
+        display: none;
+    }
+}

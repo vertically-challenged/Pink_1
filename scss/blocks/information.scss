@@ -1,0 +1,40 @@
+.information__tagline {
+    padding: 8px 0 ;
+    font-size: 24px;
+    line-height: auto;
+    font-style: normal;
+    font-weight: $light;
+    font-family: $main-font;
+    text-align: center;
+
+    color: $bg-mobile-nav--opened;
+}
+
+.information__tagline-wrapper {
+    &::after {
+        @include beveled-bg;
+    }
+}
+
+.information__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-section;
+    
+    &::after {
+        content: "";
+
+        display: block;
+        height: 278px;
+        width: 158px;
+        margin: 0 auto;
+
+        background-image: url(../images/iphone-screen-mobile.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.information__list {
+    margin-top: 46px !important;
+    margin-bottom: 42px !important;
+}

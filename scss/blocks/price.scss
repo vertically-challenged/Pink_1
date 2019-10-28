@@ -1,0 +1,94 @@
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 48px;
+
+    background-color: $bg-section;
+
+    overflow: hidden;
+}
+
+.price__radio-indicator-wrapper {
+    order: 2;
+}
+
+.price__table {
+    width: 820px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.price__table th, 
+.price__table td {
+    width: 234px;
+}
+
+.price__table td {
+    padding: 18px 24px;
+    
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: $regular;
+    font-family: $main-font;
+    
+    color: $bg-mobile-nav--opened;
+    background-color: #ffffff;
+}
+
+.price__tariff {
+    padding: 20px 0;
+    background-color: $bg-mobile-nav--opened;
+}
+
+.price__tariff-name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: $bold;
+    font-family: $main-font;
+
+    color: white;
+
+    text-transform: uppercase;
+}
+
+.price__cost {
+    font-size: 24px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: $light;
+    font-family: $main-font;
+
+    color: white;
+
+    text-transform: uppercase;  
+}
+
+.price__yes, .price__no {
+    &::after {
+        content: "";
+
+        display: block;
+        width: 30px;
+        height: 30px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.price__yes::after {
+    background-image: url(../svg/yes.svg);
+}
+
+.price__no::after {
+    background-image: url(../svg/no.svg);
+}
+
+.price__function {
+    display: none;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>Pink</title>
+</head>
+<body>
+    <header class="page-header">
+            <a class="page-header__logo" href="index.html">
+                <img class="page-header__logo-image" src="./svg/logotype-white-mobile.svg" alt="PINK" width="75px" height="22px">
+            </a>
+            <nav class="main-nav main-nav--closed">
+                <div class="container">
+                    <button class="main-nav__toggle" type="button">
+                        <span class="visually-hidden">Меню</span>
+                        <span></span>
+                    </button>
+                    <div class="main-nav__wrapper">
+                        <ul class="main-nav__list site-list">
+                            <li class="site-list__item site-list__item--active">
+                                <a>Главная</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="photo.html">Фотографии</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="contest.html">Конкурс</a>
+                            </li>
+                            <li class="site-list__item">
+                                <a href="https://htmlacademy.ru">Html Academy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <section class="hero-image">
+        <div class="container">
+            <div class="hero-image__hand"></div>
+        </div>
+        <div class="hero-image__wrapper">
+            <div class="container">
+                <button class="hero-image__button button-download">
+                    Скачать приложение
+                </button>
+                <ul class="hero-image_application-stores application-stores">
+                    <li class="application-stores__item">
+                        <a href="#">
+                            <img src="./svg/apple-logo.svg" alt="App Store" width="47px" height="56px" class="application-stores__store-logo">
+                        </a>
+                    </li>
+                    <li class="application-stores__item">
+                        <a href="#">
+                            <img src="./svg/android-logo.svg" alt="Google Play" width="43px" height="47px" class="application-stores__store-logo">
+                        </a>
+                    </li>
+                    <li class="application-stores__item">
+                        <a href="#">
+                            <img src="./svg/microsoft-logo.svg" alt="Microsoft Store" width="44px" height="41px"class="application-stores__store-logo">
+                        </a>
+                    </li>
+                </ul>
+                <p class="hero-image_description">
+                    Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="information">
+        <div class="information__tagline-wrapper">
+            <div class="container">
+                <p class="information__tagline">
+                    Устали от серости мегаполиса?<br>Нам есть, что вам предложить!
+                </p>     
+            </div>      
+        </div>
+        <div class="information__list-wrapper">
+            <div class="container">
+                <ul class="information__list advantages">
+                    <li class="advantages__item">
+                        <h3 class="advantages__header">Поднимает настроение</h3>
+                        <p class="advantages__description">
+                            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                        </p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3 class="advantages__header">Меняет мир вокруг</h3>
+                        <p class="advantages__description">
+                            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                        </p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3 class="advantages__header">Заводит новых друзей</h3>
+                        <p class="advantages__description">
+                            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="slider">
+            <div class="container">
+                <input type="radio" name="slider-radio" class="visually-hidden" id="slide-1" checked>
+                <input type="radio" name="slider-radio" class="visually-hidden" id="slide-2">
+                <input type="radio" name="slider-radio" class="visually-hidden" id="slide-3">
+                <div class="slider__radio-indicator-wrapper radio-indicator-wrapper">
+                    <label class="slider__radio-indicator radio-indicator radio-indicator--active" for="slide-1"></label>
+                    <label class="slider__radio-indicator radio-indicator" for="slide-2"></label>
+                    <label class="slider__radio-indicator radio-indicator" for="slide-3"></label>
+                </div>
+                <ul class="reviews__list slider__list">
+                    <li class="slider__item slider__item--active">
+                        <p class="reviews__reviewer-name">Николай Петров</p>
+                        <p class="reviews__review">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+                    </li>
+                    <li class="slider__item">
+                        <p class="reviews__reviewer-name">Lorem ipsum</p>
+                        <p class="reviews__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, inventore?</p>
+                    </li>
+                    <li class="slider__item">
+                        <p class="reviews__reviewer-name">Lorem ipsum</p>
+                        <p class="reviews__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nam.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <input type="radio" name="price-radio" class="visually-hidden" id="tariff-1">
+        <input type="radio" name="price-radio" class="visually-hidden" id="tariff-2" checked>
+        <input type="radio" name="price-radio" class="visually-hidden" id="tariff-3">
+        <div class="price__radio-indicator-wrapper radio-indicator-wrapper">
+            <label class="price__radio-indicator radio-indicator" for="tariff-1"></label>
+            <label class="price__radio-indicator radio-indicator radio-indicator--active" for="tariff-2"></label>
+            <label class="price__radio-indicator radio-indicator" for="tariff-3"></label>
+        </div>
+        <table class="price__table">
+            <tr>
+                <th class="price__function"></th>
+                <th class="price__tariff">
+                    <h3 class="price__tariff-name">База</h3>
+                    <span class="price__cost">1,99 USD</span>
+                </th>
+                <th class="price__tariff">
+                    <h3 class="price__tariff-name">Стандарт</h3>
+                    <span class="price__cost">3,99 USD</span>
+                </th>
+                <th class="price__tariff">
+                    <h3 class="price__tariff-name">Анлим</h3>
+                    <span class="price__cost">9,99 USD</span>
+                </th>
+            </tr>
+            <tr>
+                <td class="price__function">Розовый фильтр</td>
+                <td class="price__yes"></td>
+                <td class="price__no"></td>
+                <td class="price__no"></td>
+            </tr>
+            <tr>
+                <td class="price__function">Смайлики</td>
+                <td class="price__yes"></td>
+                <td class="price__yes"></td>
+                <td class="price__no"></td>
+            </tr>
+            <tr>
+                <td class="price__function">Комментарии</td>
+                <td class="price__yes"></td>
+                <td class="price__yes"></td>
+                <td class="price__yes"></td>
+            </tr>
+        </table>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <h2 class="contacts__header">Остались вопросы?<br>Свяжитесь с нами!</h2>
+            <table class="contacts__table">
+                <tr>
+                    <td class="contacts__table-first-row">Звоните:</td>
+                    <td class="contacts__table-second-row">
+                        <a href="tel:+78125556666">+7 (812) 555-66-66</ a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="contacts__table-first-row">Приезжайте в гости:</td>
+                    <td class="contacts__table-second-row">ул. Большая Конюшенная, 19/8</td>
+                </tr>
+                <tr>
+                    <td class="contacts__table-first-row">Пишите:</td>
+                    <td class="contacts__table-second-row">
+                        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="map">
+            <img src="./images/map.png" alt="ул. Большая Конюшенная, 19/8" width="320px">
+    </section>
+    <script src="./scripts/navToggle.js"></script>
+</body>
+</html>

@@ -10,7 +10,14 @@
 <body>
     <header class="page-header">
             <a class="page-header__logo" href="index.html">
-                <img class="page-header__logo-image" src="./svg/logotype-white-mobile.svg" alt="PINK" width="75px" height="22px">
+                <picture>
+                    <source media="(min-width:660px)"
+                            srcset="./svg/logo-pink-white-tablet.svg">
+                    <img 
+                            class="page-header__logo-image" 
+                            src="./svg/logo-pink-white-mobile.svg" 
+                            alt="PINK">
+                </picture>
             </a>
             <nav class="main-nav main-nav--closed">
                 <div class="container">
@@ -39,33 +46,36 @@
     </header>
     <section class="hero-image">
         <div class="container">
-            <div class="hero-image__hand"></div>
-        </div>
-        <div class="hero-image__wrapper">
-            <div class="container">
-                <button class="hero-image__button button-download">
-                    Скачать приложение
-                </button>
-                <ul class="hero-image_application-stores application-stores">
-                    <li class="application-stores__item">
-                        <a href="#">
-                            <img src="./svg/apple-logo.svg" alt="App Store" width="47px" height="56px" class="application-stores__store-logo">
-                        </a>
-                    </li>
-                    <li class="application-stores__item">
-                        <a href="#">
-                            <img src="./svg/android-logo.svg" alt="Google Play" width="43px" height="47px" class="application-stores__store-logo">
-                        </a>
-                    </li>
-                    <li class="application-stores__item">
-                        <a href="#">
-                            <img src="./svg/microsoft-logo.svg" alt="Microsoft Store" width="44px" height="41px"class="application-stores__store-logo">
-                        </a>
-                    </li>
-                </ul>
-                <p class="hero-image_description">
-                    Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
-                </p>
+            <div class="hero-image__container">
+                <div class="hero-image__hand"></div>
+            </div>
+            <div class="hero-image__wrapper">
+                <div class="hero-image__container">
+                    <p class="hero-image_tagline">Взгляните на жизнь иначе!</p>
+                    <button class="hero-image__button button-download">
+                        Скачать приложение
+                    </button>
+                    <ul class="hero-image_application-stores application-stores">
+                        <li class="application-stores__item">
+                            <a href="#">
+                                <img src="./svg/logo-apple.svg" alt="App Store" width="47px" height="56px" class="application-stores__store-logo">
+                            </a>
+                        </li>
+                        <li class="application-stores__item">
+                            <a href="#">
+                                <img src="./svg/logo-android.svg" alt="Google Play" width="43px" height="47px" class="application-stores__store-logo">
+                            </a>
+                        </li>
+                        <li class="application-stores__item">
+                            <a href="#">
+                                <img src="./svg/logo-microsoft.svg" alt="Microsoft Store" width="44px" height="41px"class="application-stores__store-logo">
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="hero-image_description">
+                        Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -73,7 +83,7 @@
         <div class="information__tagline-wrapper">
             <div class="container">
                 <p class="information__tagline">
-                    Устали от серости мегаполиса?<br>Нам есть, что вам предложить!
+                    Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!
                 </p>     
             </div>      
         </div>
@@ -99,6 +109,15 @@
                         </p>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section class="important-research">
+        <div class="container">
+            <div class="important-research__description">
+                <h3>Эффект на 24 часа!</h3>
+                <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                <a href="#">Узнать больше об исследовании</a>
             </div>
         </div>
     </section>

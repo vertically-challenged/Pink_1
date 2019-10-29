@@ -20,7 +20,12 @@
     display: flex;
     flex-direction: column;
     background-color: $bg-section;
-    
+}
+
+.information__list-wrapper .container {
+    display: flex;
+    flex-direction: column;
+
     &::after {
         content: "";
 
@@ -31,10 +36,44 @@
 
         background-image: url(../images/iphone-screen-mobile.png);
         background-repeat: no-repeat;
-    }
+    }  
 }
 
 .information__list {
     margin-top: 46px !important;
     margin-bottom: 42px !important;
+}
+
+@media (min-width: $tablet) {
+    .information__tagline {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .information__list-wrapper .container{
+        flex-direction: row;
+
+        margin-top: -46px;
+
+        &::after {
+            align-self: flex-end;
+
+            width: 270px;
+            height: 483px;
+            margin-left: 0;
+            margin-right: auto;
+
+            background-image: url(../images/iphone-screen-tablet-1@1x.png);
+        }
+    }
+
+    .information__list {
+        order: 2;
+
+        width: calc( 100vw - 344px);
+        max-width: 420px;
+        margin-bottom: 0px !important;
+        
+        text-align: left !important;
+    }
 }

@@ -66,3 +66,27 @@
 
     text-decoration: none;
 }
+
+@media (min-width: $tablet) {
+    .contacts {
+        &::after {
+            border-left: 330px solid transparent;
+            border-right: 330px solid transparent;
+            border-top: 60px solid #ffffff;
+        }
+    }
+    .contacts__header {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .contacts__table tbody {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contacts__table tr {
+        margin: 0 40px;
+    }
+}

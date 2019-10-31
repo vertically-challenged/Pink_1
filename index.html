@@ -114,10 +114,10 @@
     </section>
     <section class="important-research">
         <div class="container">
-            <div class="important-research__description">
-                <h3>Эффект на 24 часа!</h3>
-                <p>Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-                <a href="#">Узнать больше об исследовании</a>
+            <div class="important-research__wrapper">
+                <h3 class="important-research__header">Эффект на 24 часа!</h3>
+                <p class="important-research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                <a class="important-research__link" href="#">Узнать больше об исследовании</a>
             </div>
         </div>
     </section>
@@ -133,16 +133,19 @@
                     <label class="slider__radio-indicator radio-indicator" for="slide-3"></label>
                 </div>
                 <ul class="reviews__list slider__list">
-                    <li class="slider__item slider__item--active">
+                    <li class="reviews__item slider__item slider__item--active">
                         <p class="reviews__reviewer-name">Николай Петров</p>
+                        <p class="reviews__reviewer-info">25 лет, водитель трамвая</p>
                         <p class="reviews__review">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
                     </li>
-                    <li class="slider__item">
+                    <li class="reviews__item slider__item">
                         <p class="reviews__reviewer-name">Lorem ipsum</p>
+                        <p class="reviews__reviewer-info">Lorem ipsum</p>
                         <p class="reviews__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, inventore?</p>
                     </li>
-                    <li class="slider__item">
+                    <li class="reviews__item slider__item">
                         <p class="reviews__reviewer-name">Lorem ipsum</p>
+                        <p class="reviews__reviewer-info">Lorem ipsum</p>
                         <p class="reviews__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nam.</p>
                     </li>
                 </ul>
@@ -206,7 +209,7 @@
                 </tr>
                 <tr>
                     <td class="contacts__table-first-row">Приезжайте в гости:</td>
-                    <td class="contacts__table-second-row">ул. Большая Конюшенная, 19/8</td>
+                    <td class="contacts__table-second-row">ул. Большая <br>Конюшенная, 19/8</td>
                 </tr>
                 <tr>
                     <td class="contacts__table-first-row">Пишите:</td>
@@ -218,7 +221,12 @@
         </div>
     </section>
     <section class="map">
-            <img src="./images/map.png" alt="ул. Большая Конюшенная, 19/8" width="320px">
+        <picture>
+            <source media="(min-width: 660px)" 
+                    srcset="./images/map-tablet.png">
+            <img    src="./images/map.png" 
+                    alt="ул. Большая Конюшенная, 19/8">
+        </picture>
     </section>
     <script src="./scripts/navToggle.js"></script>
 </body>

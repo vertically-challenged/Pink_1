@@ -8,11 +8,17 @@
     text-align: center;
 }
 .reviews__reviewer-name {
+    margin-bottom: 0;
+
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
     font-weight: $bold;
     font-family: $main-font;
+}
+
+.reviews__reviewer-info {
+    display: none;
 }
 
 .reviews__review{
@@ -22,5 +28,27 @@
 
     &::after {
         content: "»";
+    }
+}
+
+@media (min-width: $tablet) {
+    .reviews {
+        padding-top: 20px;
+    }
+
+    .reviews__reviewer-info {
+        display: block;
+    }
+
+    .reviews__reviewer-name {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .reviews__review {
+        order: -2;
+
+        font-size: 18px;
+        line-height: 30px;
     }
 }

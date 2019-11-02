@@ -41,6 +41,11 @@ body {
     @media (min-width: $tablet) {
         max-width: 800px;
     }
+
+    @media (min-width: $desktop) {
+        max-width: 960px;
+        padding: 0 10px;
+    }
 }
 
 img {

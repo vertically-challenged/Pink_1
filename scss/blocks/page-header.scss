@@ -29,3 +29,9 @@
         height: 41px;
     }  
 }
+
+@media (min-width: $desktop) {
+    .page-header__logo {
+        left: calc( 10px + (100vw - 960px)/2 );
+    }
+}

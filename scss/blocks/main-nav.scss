@@ -128,3 +128,15 @@
         margin-bottom: 43px;
     }
 }
+
+@media (min-width: $desktop) {
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__wrapper {
+        display: flex !important;
+
+        margin: 0;
+    }
+}

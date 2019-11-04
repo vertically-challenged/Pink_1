@@ -50,6 +50,10 @@
         background-repeat: no-repeat;
         background-position: center;
 
+        opacity: .3;
+
+        transition: .2s;
+
         cursor: pointer;
         
         &:first-of-type {
@@ -60,6 +64,14 @@
             order: 3;
 
             background-image: url(../svg/icon-review-arrow-right.svg);
+        }
+
+        &:hover {
+            opacity: .6;
+        }
+
+        &:active {
+            opacity: .1;
         }
     }
 

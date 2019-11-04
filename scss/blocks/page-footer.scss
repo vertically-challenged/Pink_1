@@ -33,6 +33,8 @@
 
     background-position: center;
     background-repeat: no-repeat;
+
+    transition: .2s;
     
     &--twitter {
         background-image: url(../svg/icon-twitter.svg);
@@ -46,6 +48,14 @@
         background-position: 55% center;
 
         background-image: url(../svg/icon-youtube.svg);
+    }
+
+    &:hover {
+        border-color: $bg-mobile-nav--opened;
+    }
+
+    &:active {
+        opacity: .1;
     }
 
 }
@@ -62,6 +72,22 @@
     & svg {
         margin-left: 14px;
         fill: $hover;
+    }
+
+    &:hover {
+        & svg  {
+            transition: .2s;
+
+            fill: $bg-mobile-nav--opened;
+        }
+    }
+
+    &:active {
+        & svg  {
+            transition: .2s;
+            
+            opacity: .1;
+        }
     }
 }
 

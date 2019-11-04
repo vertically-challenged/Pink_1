@@ -67,6 +67,20 @@
     text-decoration: none;
 }
 
+.contacts__mail-link {
+    transition: .2s;
+
+    &:hover {
+        text-decoration: underline;
+
+        color: $bg-mobile-nav--opened;
+    }
+
+    &:active {
+        opacity: .3;
+    }
+}
+
 @media (min-width: $tablet) {
     .contacts {
         &::after {

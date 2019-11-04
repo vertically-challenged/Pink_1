@@ -37,12 +37,6 @@
     background-color: $bg-mobile-hero-image;
 }
 
-.hero-image__wrapper .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-
 .hero-image_tagline {
     display: none;
 }
@@ -130,5 +124,36 @@
         width: 100%;
 
         font-size: 18px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .hero-image {
+        min-height: 854px;
+
+        background-image: url(../images/bg-back-desktop.jpg);
+    }
+
+    .hero-image__hand {
+        width: 820px;
+        height: 646px;
+
+        background-image: url(../images/iphone-hand-desktop@1x.png);
+    }
+
+    .hero-image__wrapper {
+        height: 650px;
+
+        & .hero-image__container {
+            justify-content: space-between;
+
+            height: 86%;
+        }
+    }
+
+    .hero-image_tagline {
+        width: 100%;
+
+        font-size: 50px;
     }
 }

@@ -11,6 +11,8 @@
 }
 
 .information__tagline-wrapper {
+    overflow: hidden;
+    
     &::after {
         @include beveled-bg;
     }
@@ -75,5 +77,60 @@
         margin-bottom: 0px !important;
         
         text-align: left !important;
+    }
+}
+
+@media (min-width: $desktop) {
+    .information__tagline {
+        padding-bottom: 60px;
+    }
+
+    .information__list-wrapper {
+        padding-bottom: 70px;
+    }
+
+    .information__list {
+        display: flex;
+        justify-content: space-around;
+
+        max-width: none;
+        
+        & li {
+            &::before {
+                content: "";
+
+                display: block;
+                width: 280px;
+                height: 302px;
+                margin-left: -20px;
+                margin-bottom: 44px;
+
+                background-repeat: no-repeat;
+            }
+
+            &:nth-child(1) {
+                &::before {
+                    background-image: url(../images/iphone-screen-desktop-1@1x.png);
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    background-image: url(../images/iphone-screen-desktop-2@1x.png);
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    background-image: url(../images/iphone-screen-desktop-3@1x.png);
+                }
+            } 
+        }
+    }
+    .information__list-wrapper .container {
+        margin-top: -120px;
+        &::after {
+            display: none;
+        }
     }
 }

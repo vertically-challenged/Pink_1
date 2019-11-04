@@ -113,7 +113,9 @@
 
     .price__table th, 
     .price__table td {
-        width: 142px;
+        @media (max-width: 959px) {
+           width: 142px; 
+        }
         text-align: center;
     }
 
@@ -133,5 +135,24 @@
 
     .price__function {
         display: block;
+    }
+}
+
+@media (min-width: $desktop) {
+    .price__table {
+        max-width: 940px;
+    }
+
+    .price__tariff-name {
+        font-size: 18px;
+    }
+
+    .price__cost {
+        font-size: 24px;
+    }
+
+    .price__function {
+        font-size: 18px;
+        text-align: left !important;
     }
 }

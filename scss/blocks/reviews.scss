@@ -1,4 +1,6 @@
 .reviews {
+    overflow: hidden;
+    
     &::after {
         @include beveled-bg;
     }
@@ -50,5 +52,23 @@
 
         font-size: 18px;
         line-height: 30px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .reviews {
+        padding-top: 40px;
+    }
+
+    .reviews__list {
+        margin-bottom: 30px !important;
+    }
+    
+    .reviews__reviewer-name {
+        font-size: 24px;
+    }
+
+    .reviews__reviewer-info {
+        font-size: 18px;
     }
 }

@@ -126,6 +126,8 @@
     <section class="reviews">
         <div class="slider">
             <div class="container">
+                <button type="button" class="slider__button slider__button--left"></button>
+                <button type="button" class="slider__button slider__button--right"></button>
                 <input type="radio" name="slider-radio" class="visually-hidden" id="slide-1" checked>
                 <input type="radio" name="slider-radio" class="visually-hidden" id="slide-2">
                 <input type="radio" name="slider-radio" class="visually-hidden" id="slide-3">
@@ -224,6 +226,8 @@
     </section>
     <section class="map">
         <picture>
+            <source media="(min-width: 960px)"
+                    srcset="./images/map-desktop.png">
             <source media="(min-width: 660px)" 
                     srcset="./images/map-tablet.png">
             <img    src="./images/map.png" 

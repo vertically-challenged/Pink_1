@@ -11,7 +11,7 @@
     font-family: $main-font;
 
     color: white;
-    background-color: $bg-mobile-hero-image;
+    background-color: transparent;
 
     cursor: pointer;
     transition: .2s;
@@ -23,5 +23,14 @@
 
     &:active {
         color: transparentize($color: $hover, $amount: .7);
+    }
+}
+
+@media (min-width: $desktop) {
+    .button-download {
+        padding: 14px 20px;
+        padding-bottom: 16px;
+
+        font-size: 21px;
     }
 }

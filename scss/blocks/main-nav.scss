@@ -1,8 +1,7 @@
 .main-nav {
     box-sizing: border-box;
     min-height: 66px;
-    padding: 22px 0;
-    padding-bottom: 0;
+    padding-top: 22px;
 
     background-color: $bg-nav;
 
@@ -39,7 +38,6 @@
 
     background-color: #ffffff00;
 
-    // transition: .2s;
     cursor: pointer;
     
     &::before, &::after, span {
@@ -113,5 +111,32 @@
 
     span {
         display: none;
+    }
+}
+
+@media (min-width: $tablet) {
+    .main-nav {
+        min-height: 110px;
+        padding-top: 43px;
+
+        & .container {
+            width: auto;
+        }
+    }
+
+    .main-nav__toggle {
+        margin-bottom: 43px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__wrapper {
+        display: flex !important;
+
+        margin: 0;
     }
 }

@@ -66,3 +66,64 @@
 
     text-decoration: none;
 }
+
+.contacts__mail-link {
+    transition: .2s;
+
+    &:hover {
+        text-decoration: underline;
+
+        color: $bg-mobile-nav--opened;
+    }
+
+    &:active {
+        opacity: .3;
+    }
+}
+
+@media (min-width: $tablet) {
+    .contacts {
+        &::after {
+            border-left: 330px solid transparent;
+            border-right: 330px solid transparent;
+            border-top: 60px solid #ffffff;
+        }
+    }
+
+    .contacts__header {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .contacts__table tbody {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contacts__table tr {
+        margin: 0 40px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .contacts {
+        &::after {
+            border-left: 480px solid transparent;
+            border-right: 480px solid transparent;
+            border-top: 80px solid #ffffff;
+        }
+    }
+
+    .contacts__header {
+        font-size: 50px;
+        line-height: 56px;
+    }
+
+    .contacts__table tbody {
+        & tr:nth-child(2) { 
+            margin-left: 65px;
+            order: 0;
+        }
+    }
+}

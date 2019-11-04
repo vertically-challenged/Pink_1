@@ -1,0 +1,105 @@
+.important-research {
+    display: none;
+}
+
+@media (min-width: $tablet) {
+    .important-research {
+        display: block;
+    }
+
+    .important-research .container {
+        display: flex;
+
+        padding-top: 20px;
+
+        &::before {
+            content: "24";
+
+            display: block;
+
+            box-sizing: border-box;
+            padding-top: 115px;
+            width: 238px;
+            height: 350px;
+
+            font-size: 96px;
+            line-height: 149px;
+            font-style: normal;
+            font-weight: $bold;
+            text-align: center;
+
+            color: $hover;
+            background-image: 
+                url(../svg/icon-editor-diagram-fill.svg),
+                url(../svg/icon-timer.svg);
+            
+            background-repeat: no-repeat;
+            background-position: center 94px, center;
+        }
+    }
+
+    .important-research__wrapper {
+        align-self: center;
+
+        width: calc( 100vw - 344px);
+        max-width: 420px;
+        margin-left: auto;
+
+        text-align: left;
+    }
+
+    .important-research__header {
+        font-size: 30px;
+        line-height: 36px;
+        font-style: normal;
+        font-weight: $bold;
+        font-family: $main-font;
+    }
+
+    .important-research__description {
+        line-height: 24px;
+    }
+
+    .important-research__link {
+        line-height: 24px;
+        color: $hover;
+    }
+}
+
+@media (min-width: $desktop) {
+    .important-research {
+        padding-bottom: 68px;
+
+        background-color: $bg-section;
+    }
+
+    .important-research .container {
+        &::before {
+            width: 300px;
+            padding-top: 100px;
+
+            font-size: 120px;
+            line-height: 186px;
+
+            background-image: 
+            url(../svg/icon-editor-diagram-fill-desktop.svg),
+            url(../svg/icon-timer.svg);
+
+            background-position: center 70px, center;
+        }
+    }
+
+    .important-research__wrapper {
+        margin-right: auto;
+        margin-left: 72px;
+        min-width: 526px;
+    }
+
+    .important-research__description {
+        font-size: 18px;
+    }
+
+    .important-research__link {
+        font-size: 18px;
+    }
+}

@@ -9,7 +9,33 @@
 }
 
 .advantages__header {
+    margin-bottom: 6px;
+    
     font-size: 18px;
     line-height: 30px;
     font-weight: $bold;
+}
+
+.advantages__description {
+    margin: 0;
+}
+
+@media (min-width: $desktop) {
+    .advantages__item {
+        max-width: 240px;
+
+        text-align: center;
+    }
+
+    .advantages__header {
+        margin-bottom: 13px;
+
+        font-size: 30px;
+    }
+
+    .advantages__description {
+        margin-top: 23px;
+
+        font-size: 18px;
+    }
 }

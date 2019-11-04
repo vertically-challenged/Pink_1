@@ -28,7 +28,7 @@
 .price__table td {
     padding: 18px 24px;
     
-    font-size: 18px;
+    font-size: 14px;
     line-height: 30px;
     font-style: normal;
     font-weight: $regular;
@@ -36,6 +36,8 @@
     
     color: $bg-mobile-nav--opened;
     background-color: #ffffff;
+
+    text-transform: uppercase;
 }
 
 .price__tariff {
@@ -91,4 +93,66 @@
 
 .price__function {
     display: none;
+}
+
+@media (min-width: $tablet) {
+    .price {
+        padding: 0 20px;
+        padding-bottom: 40px;
+        overflow: visible;
+    }
+
+    .price__radio-indicator-wrapper {
+        display: none;
+    }
+
+    .price__table {
+        width: auto;
+        min-width: 640px;
+    }
+
+    .price__table th, 
+    .price__table td {
+        @media (max-width: 959px) {
+           width: 142px; 
+        }
+        text-align: center;
+    }
+
+    .price__tariff-name {
+        font-size: 16px;
+    }
+
+    .price__cost {
+        font-size: 18px;
+    }
+
+    .price__yes, .price__no {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    .price__function {
+        display: block;
+    }
+}
+
+@media (min-width: $desktop) {
+    .price__table {
+        max-width: 940px;
+    }
+
+    .price__tariff-name {
+        font-size: 18px;
+    }
+
+    .price__cost {
+        font-size: 24px;
+    }
+
+    .price__function {
+        font-size: 18px;
+        text-align: left !important;
+    }
 }

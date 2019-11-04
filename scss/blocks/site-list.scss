@@ -47,3 +47,27 @@
         color: transparentize($color: $hover, $amount: .7);
     }
 }
+
+@media (min-width: $desktop) {
+    .site-list {
+        flex-direction: row;
+        justify-content: flex-end;
+
+        border: none;
+    }    
+
+    .site-list__item {
+        margin-left: 80px;
+        border: none;
+    }
+
+    .site-list__item a {
+        height: auto;
+        padding: 0;
+
+        line-height: 18px;
+        font-weight: $regular;
+
+        text-transform: none;
+    }
+}
